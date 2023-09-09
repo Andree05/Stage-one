@@ -5,8 +5,8 @@ import sys
 
 app = Flask(__name__)
 
-@app.route('/Andrewinfo', methods=['GET'])
-def get_info():
+@app.route('/andrew', methods=['GET'])
+def get_andrew():
     # Parse query parameters
     slack_name = request.args.get('slack_name', 'Fagbemi Andrew')
     track = request.args.get('track', 'Backend')
