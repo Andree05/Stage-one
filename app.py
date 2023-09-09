@@ -8,8 +8,8 @@ app = Flask(__name__)
 @app.route('/andrew', methods=['GET'])
 def get_andrew():
     # Parse query parameters
-    slack_name = request.args.get('slack_name', 'Fagbemi Andrew')
-    track = request.args.get('track', 'Backend')
+    slack_name = request.args.get('slack_name', 'fagbemi_andrew')
+    track = request.args.get('track', 'backend')
 
     # Get current day of the week
     day_of_week = datetime.datetime.utcnow().strftime('%A')
