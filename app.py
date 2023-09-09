@@ -28,13 +28,13 @@ def get_andrew():
 
     # Response data
     response_data = {
-        'Slack name': slack_name,
-        'Current day of the week': day_of_week,
-        'Current UTC time': utc_time.strftime('%Y-%m-%d %H:%M'),
-        'Track': track,
-        'GitHub URL of the file being run': file_url,
-        'GitHub URL of the full source code': source_code_url,
-        'Status Code': 'Success'
+        'slack_name': slack_name,
+        'current_day': day_of_week,
+        'UTC_time': utc_time.strftime('%Y-%m-%d %H:%M'),
+        'track': track,
+        'github_file_url': file_url,
+        'github_repo_url': source_code_url,
+        'status_code': 'Success'
     }
 
     return jsonify(response_data), 200
