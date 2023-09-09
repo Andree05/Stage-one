@@ -30,7 +30,7 @@ def get_andrew():
     response_data = {
         'Slack name': slack_name,
         'Current day of the week': day_of_week,
-        'Current UTC time': utc_time.strftime('%Y-%m-%d %H:%M:%S'),
+        'Current UTC time': utc_time.strftime('%Y-%m-%d %H:%M'),
         'Track': track,
         'GitHub URL of the file being run': file_url,
         'GitHub URL of the full source code': source_code_url,
