@@ -23,8 +23,8 @@ def get_info():
         return jsonify({'Status Code': 'Invalid UTC Offset'}), 400
 
     # Get GitHub URLs
-    file_url = 'https://github.com/Andree05/Backend-Stage-One-Task/app.py'
-    source_code_url = 'https://github.com/Andree05/Backend-Stage-One-Task/'
+    file_url = 'https://github.com/Andree05/Stage-One-/app.py'
+    source_code_url = 'https://github.com/Andree05/Stage-One/'
 
     # Response data
     response_data = {
