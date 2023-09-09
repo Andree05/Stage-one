@@ -39,20 +39,5 @@ def get_andrew():
 
     return jsonify(response_data), 200
 
-#New route for publicly accessible endpoint
-@app.route('/public_endpoint', methods=['GET'])
-def get_public_info():
-    #Parse query parameters
-    slack_name = request.args.get('slack_name', 'Fagbemi_Andrew')
-    track = request.args.get('track', 'Backend')
-
-    #Create a response dictionary
-    response_data = {
-        'Slack name': slack_name,
-        'Track': track
-    }
-
-    return jsonify(response_data), 200
-
 if __name__ == '__main__':
     app.run(debug=True)
